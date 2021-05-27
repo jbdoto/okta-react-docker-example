@@ -63,6 +63,9 @@ export default withOktaAuth(class Asteroids extends React.Component {
                             {item}
                         </li>
                     ))}
+                    <p>
+                        Access token: {this.props.authState.accessToken}
+                    </p>
                 </ul>
             );
         }
